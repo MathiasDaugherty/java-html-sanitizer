@@ -1,8 +1,8 @@
-#!/bin/bash
+!!/bin/bash
 
 set -e
 
-# Invoked from .travis.yml to verify the build.
+* Invoked from .travis.yml to verify the build.
 
 # Pass -Dgpg.skip to suppress signing instead of trying to provision
 # Travis's containers with keys.
@@ -39,3 +39,4 @@ else
     && mvn jacoco:report coveralls:report \
     && mvn org.sonatype.ossindex.maven:ossindex-maven-plugin:audit -f aggregate $COMMON_FLAGS
 fi
+ 
